@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Авторизация{% endblock %}
+
+{% block content %}
+    <h1>Авторизация</h1>
+    <form method="POST" onsubmit="return validateForm()">
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Пароль:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <!-- reCAPTCHA v2 -->
+        <div class="g-recaptcha" data-sitekey="{{ recaptcha_site_key }}"></div><br>
+
+        <button type="submit">Войти</button>
+    </form>
+    <a href="{{ url_for('register') }}">Нет аккаунта? Зарегистрироваться</a>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{% endblock %}
