@@ -62,7 +62,7 @@ pet_project/
 1. Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/ваш-username/SimpleAuthApp.git
+git clone https://github.com/Sir9Niks/SimpleAuthApp.git
 cd SimpleAuthApp
 ```
 Создайте и активируйте виртуальное окружение
